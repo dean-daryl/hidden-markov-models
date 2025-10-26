@@ -20,23 +20,7 @@ This repository implements a complete Hidden Markov Model (HMM) system for human
 | **Jumping** | Person performing continuous jumps | High amplitude spikes at ~1 Hz |
 | **Still** | Phone placed on flat surface | Minimal noise, near-perfect gravity |
 
-## 🏗️ Project Structure
-
-```
-hidden-markov-models/
-├── README.md                    # This file
-└── hmm_activity_data/          # Main project directory
-    ├── README.md               # Detailed documentation
-    ├── generate_dummy_data.py  # Data generation script
-    ├── feature_extraction.py   # Feature extraction pipeline
-    ├── feature_analysis_demo.py # Advanced analysis & HMM prep
-    ├── complete_sensor_data.csv # Generated sensor dataset
-    ├── extracted_features.csv  # Full feature vectors
-    ├── hmm_ready_features.csv  # Optimized features for HMM
-    └── *.png                   # Visualization outputs
-```
-
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -70,7 +54,7 @@ python feature_analysis_demo.py
 - Activity transition probability calculation
 - Generates HMM-ready feature set (20 best features)
 
-## 📈 Results Summary
+##  Results Summary
 
 ### Dataset Statistics
 - **Total samples**: 18,560 sensor readings
@@ -94,7 +78,7 @@ jumping      0.000    0.000    0.988  0.012
 still        0.000    0.000    0.000  1.000
 ```
 
-## 🔬 Technical Implementation
+## Technical Implementation
 
 ### Data Generation
 - **Realistic signal modeling** with activity-specific patterns
@@ -111,7 +95,7 @@ still        0.000    0.000    0.000  1.000
 - **Normalization**: StandardScaler for consistent feature scales
 - **Transition modeling**: Empirically derived transition probabilities
 
-## 📋 Next Steps: HMM Implementation
+## Next Steps: HMM Implementation
 
 The project provides everything needed for HMM modeling:
 
@@ -127,12 +111,7 @@ The project provides everything needed for HMM modeling:
 3. **Baum-Welch Algorithm**: Train model parameters
 4. **Model Evaluation**: Confusion matrix, precision, recall
 
-### Files Ready for HMM
-- `hmm_ready_features.csv` - Normalized 20-feature dataset
-- Transition probabilities from analysis
-- Train/test split recommendations
-
-## 📊 Visualizations Generated
+##  Visualizations Generated
 
 - **Sample sensor data** - Raw accelerometer/gyroscope signals
 - **Feature distributions** - Activity-specific feature patterns
@@ -140,38 +119,3 @@ The project provides everything needed for HMM modeling:
 - **PCA analysis** - Dimensionality reduction insights
 - **Activity transitions** - State transition heatmap
 - **Feature importance** - Most discriminative features
-
-## 🔧 Key Technologies
-
-- **NumPy/Pandas**: Data manipulation and analysis
-- **SciPy**: Signal processing and statistical analysis
-- **Scikit-learn**: Machine learning and preprocessing
-- **Matplotlib/Seaborn**: Data visualization
-- **FFT Analysis**: Frequency domain feature extraction
-
-## 📚 Educational Value
-
-This project demonstrates:
-- **Realistic data simulation** for machine learning
-- **Comprehensive feature engineering** for time series data
-- **Statistical analysis** of sensor data characteristics
-- **Preparation techniques** for probabilistic modeling
-- **Visualization methods** for high-dimensional data
-
-## 🎓 Academic Context
-
-Perfect for coursework covering:
-- Hidden Markov Models
-- Human Activity Recognition
-- Time Series Analysis
-- Feature Engineering
-- Sensor Data Processing
-- Pattern Recognition
-
-## 📄 License
-
-This project is created for educational purposes. Feel free to use and modify for learning and research.
-
----
-
-**Ready to implement your Hidden Markov Model? Start with the optimized features in `hmm_ready_features.csv`!**
